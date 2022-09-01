@@ -1,4 +1,4 @@
-# This project shows how to create a simple Windows Service with .NET 6
+# This project shows how to create a simple Windows Service with .NET6
 # 1- First, we create a Worker Service in Visual Studio.
 # 2- Then we right-click on Solution Explorer / Dependencies.
 
