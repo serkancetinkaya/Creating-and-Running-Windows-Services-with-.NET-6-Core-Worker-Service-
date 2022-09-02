@@ -10,7 +10,7 @@ namespace WorkerService
 
         public override Task StopAsync(CancellationToken cancellationToken)
         {
-            DosyaYaz("Worker Calismayi Durdurdu " + DateTime.Now);
+            DosyaYaz("Worker Calismayi Durdurdu ..." + DateTime.Now);
             return base.StopAsync(cancellationToken);
         }
 
