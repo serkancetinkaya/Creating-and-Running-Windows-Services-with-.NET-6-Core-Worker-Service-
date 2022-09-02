@@ -4,13 +4,13 @@ namespace WorkerService
     {
         public override Task StartAsync(CancellationToken cancellationToken)
         {
-            DosyaYaz("Worker Çalýþmaya Baþladý " + DateTime.Now);
+            DosyaYaz("Worker Calismaya Basladi " + DateTime.Now);
             return base.StartAsync(cancellationToken);
         }
 
         public override Task StopAsync(CancellationToken cancellationToken)
         {
-            DosyaYaz("Worker Çalýþmayý Durdurdu... " + DateTime.Now);
+            DosyaYaz("Worker Calismayi Durdurdu " + DateTime.Now);
             return base.StopAsync(cancellationToken);
         }
 
@@ -23,7 +23,7 @@ namespace WorkerService
         {
             while (!stoppingToken.IsCancellationRequested)
             {
-                DosyaYaz("Worker Çalýþmaya Devam Ediyor " + DateTime.Now);
+                DosyaYaz("Worker Calismaya Devam Ediyor " + DateTime.Now);
                 await Task.Delay(1000, stoppingToken);
             }
         }
